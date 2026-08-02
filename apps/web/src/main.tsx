@@ -1,9 +1,11 @@
-import { StrictMode } from "react";
+import { StrictMode, Suspense } from "react";
+import { RouterProvider } from "@tanstack/react-router";
 import { createRoot } from "react-dom/client";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { worker } from "@repo/shared/mocks/browsers";
+import { router } from "./router";
+
 import "./index.css";
-import App from "./App.tsx";
 
 const queryClient = new QueryClient();
 
@@ -21,7 +23,9 @@ enableMocking().then(() => {
   createRoot(document.getElementById("root")!).render(
     <StrictMode>
       <QueryClientProvider client={queryClient}>
-        <App />
+        <Suspense fallback={<div>Loading...</div>}>
+          <RouterProvider router={router} />
+        </Suspense>
       </QueryClientProvider>
     </StrictMode>,
   );
