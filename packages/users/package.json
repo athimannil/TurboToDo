@@ -1,0 +1,25 @@
+{
+  "name": "@repo/users",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@repo/shared": "*",
+    "@tanstack/react-query": "^5.101.4",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.2",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-react-refresh": "^0.5.3",
+    "typescript": "^5.9.2"
+  }
+}

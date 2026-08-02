@@ -4,14 +4,25 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
+    "test:run": "vitest run",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^7.0.0",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
+    "@vitest/ui": "^4.1.10",
+    "husky": "^9.1.7",
+    "jsdom": "^29.1.1",
     "prettier": "^3.7.4",
     "turbo": "^2.10.8",
-    "typescript": "5.9.2"
+    "typescript": "5.9.2",
+    "vitest": "^4.1.10"
   },
   "engines": {
     "node": ">=18"
