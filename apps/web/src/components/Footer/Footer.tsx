@@ -4,8 +4,8 @@ const Footer = () => {
       <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-3 px-5 py-6 sm:flex-row">
         <p className="text-sm text-muted-foreground">
           © {new Date().getFullYear()}{" "}
-          <span className="font-semibold text-foreground">ToDo App</span>. Built
-          for reference.
+          <span className="font-semibold text-foreground">TurboToDo</span>.
+          Built for reference.
         </p>
         <nav aria-label="Footer">
           <ul className="flex items-center gap-4 text-sm text-muted-foreground">

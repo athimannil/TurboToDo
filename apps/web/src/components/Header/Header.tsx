@@ -15,7 +15,7 @@ const Header = () => {
             to="/"
             className="font-mono text-sm font-semibold tracking-[0.2em] uppercase"
           >
-            ToDo App
+            TurboToDo
           </Link>
           <nav aria-label="Main">
             <ul className="flex items-center gap-1">
