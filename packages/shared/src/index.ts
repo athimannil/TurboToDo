@@ -13,4 +13,4 @@ export { createQueryClient } from "./query-client";
 
 export { selectedUserIdAtom } from "./atoms";
 
-export { server } from "./mocks/server";
+export { worker } from "./mocks/browsers";
