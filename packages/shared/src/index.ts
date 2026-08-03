@@ -1,5 +1,3 @@
-export const APP_SHARED = "Shared Code";
-
 export type {
   User,
   ToDoItem,

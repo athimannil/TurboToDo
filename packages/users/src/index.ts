@@ -1,3 +1,3 @@
-export const APP_USERS = "Users Code";
+export { AvailableUsers } from "./components/AvailableUsers";
 
 export { useUsers } from "./hooks";

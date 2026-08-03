@@ -1,2 +1,3 @@
-export { default as Field } from "./Field";
+export { Field } from "./Field";
 export { Button } from "./Button";
+export { Panel } from "./Panel";

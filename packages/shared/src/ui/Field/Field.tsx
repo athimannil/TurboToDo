@@ -49,4 +49,4 @@ const Field = ({ id, label, hint, error, children }: FieldProps) => {
   );
 };
 
-export default Field;
+export { Field };
