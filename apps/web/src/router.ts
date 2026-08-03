@@ -3,6 +3,7 @@ import Root from "./routes/__root";
 import Home from "./routes/index";
 import UsersPage from "./routes/users/index";
 import UserDetail from "./routes/users/$userId";
+import TodoPage from "./routes/todos";
 
 const rootRoute = new RootRoute({
   component: Root,
@@ -26,10 +27,17 @@ const userDetailRoute = new Route({
   component: UserDetail,
 });
 
+const todoRoute = new Route({
+  getParentRoute: () => rootRoute,
+  path: "/todos",
+  component: TodoPage,
+});
+
 const routeTree = rootRoute.addChildren([
   indexRoute,
   usersRoute,
   userDetailRoute,
+  todoRoute,
 ]);
 
 export const router = new Router({ routeTree });
