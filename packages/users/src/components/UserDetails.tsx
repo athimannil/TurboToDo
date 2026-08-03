@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { useUser } from "../hooks";
+import { Spinner } from "@repo/shared";
 
 interface UserDetailsProp {
   userId: string;
@@ -19,7 +20,7 @@ const UserDetails = ({ userId, actions }: UserDetailsProp) => {
   };
 
   if (isLoading) {
-    return <p>Loading.........</p>;
+    return <Spinner label="Loading user details..." />;
   }
 
   if (error) {
