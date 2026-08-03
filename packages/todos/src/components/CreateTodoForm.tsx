@@ -59,6 +59,7 @@ const CreateTodoForm = ({
         {(props) => (
           <select
             {...props}
+            name="todo-assignee"
             aria-describedby="user-description"
             className="w-full rounded-md border border-border bg-card px-3 py-2 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/40 aria-invalid:border-destructive"
             value={selectedUserId || ""}
@@ -78,6 +79,7 @@ const CreateTodoForm = ({
         {(props) => (
           <input
             {...props}
+            name="title"
             type="text"
             className="w-full rounded-md border border-border bg-card px-3 py-2 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/40 aria-invalid:border-destructive"
             value={title}
@@ -95,6 +97,7 @@ const CreateTodoForm = ({
         {(props) => (
           <textarea
             {...props}
+            name="description"
             className="w-full rounded-md border border-border bg-card px-3 py-2 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-2 focus-visible:ring-ring/40 aria-invalid:border-destructive min-h-20"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
