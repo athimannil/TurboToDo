@@ -3,19 +3,19 @@ import type { User } from "../../types";
 const users: User[] = [
   {
     id: "1",
-    username: "Muhammed",
+    username: "muhammed",
     createdAt: new Date(),
     updatedAt: new Date(),
   },
   {
     id: "2",
-    username: "Athimannil",
+    username: "athimannil",
     createdAt: new Date(),
     updatedAt: new Date(),
   },
   {
     id: "3",
-    username: "Joseph",
+    username: "joseph",
     createdAt: new Date(),
     updatedAt: new Date(),
   },

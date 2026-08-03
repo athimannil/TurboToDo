@@ -1,5 +1,5 @@
 import { Panel } from "@repo/shared";
-import { AvailableUsers } from "@repo/users";
+import { CreateUserForm, AvailableUsers } from "@repo/users";
 
 const UsersList = () => {
   return (
@@ -19,7 +19,7 @@ const UsersList = () => {
           title="Create User"
           description="Fill out the form to create a new user."
         >
-          <p>User form</p>
+          <CreateUserForm />
         </Panel>
         <Panel
           title="Existing Users"
