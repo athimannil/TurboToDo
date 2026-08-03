@@ -14,10 +14,10 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
-      "@repo/shared": path.resolve(__dirname, "../../packages/shared/src"),
-      "@repo/users": path.resolve(__dirname, "../../packages/users/src"),
-      "@repo/todos": path.resolve(__dirname, "../../packages/todos/src"),
+      "@": path.resolve(import.meta.dirname, "./src"),
+      "@repo/shared": "/../../packages/shared/src",
+      "@repo/users": "/../../packages/users/src",
+      "@repo/todos": "/../../packages/todos/src",
     },
   },
 });

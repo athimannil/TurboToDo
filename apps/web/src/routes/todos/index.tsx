@@ -6,7 +6,6 @@ import { selectedUserIdAtom } from "@repo/shared";
 const TodosPage = () => {
   const [selectedUserId, setSelectedUserId] = useAtom(selectedUserIdAtom);
 
-  console.log("selectedUserId", selectedUserId);
   return (
     <div className="flex flex-col gap-8">
       <header>

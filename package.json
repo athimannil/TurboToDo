@@ -1,6 +1,7 @@
 {
   "name": "TurboToDo",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
@@ -31,7 +32,7 @@
   "devEngines": {
     "packageManager": {
       "name": "npm",
-      "version": "11.6.2"
+      "version": "11.12.1"
     }
   },
   "workspaces": [
@@ -41,6 +42,12 @@
   "msw": {
     "workerDirectory": [
       "apps/web/public"
+    ]
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
     ]
   }
 }

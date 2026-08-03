@@ -1,11 +1,12 @@
 import { Link } from "@tanstack/react-router";
+import { Spinner } from "@repo/shared";
 import { useUsers } from "../hooks";
 
 const AvailableUsers = () => {
   const { data: users, isLoading, error } = useUsers();
 
   if (isLoading) {
-    return <p>Loading users...</p>;
+    return <Spinner label="Loading users..." />;
   }
 
   if (error) {

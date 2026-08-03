@@ -1,7 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { useCreateTodo } from "../hooks";
 import { createTodoSchema } from "../validation";
-import { Field, Button, type User } from "@repo/shared";
+import { Field, Button } from "@repo/shared";
 import { useUsers } from "@repo/users";
 
 interface CreateTodoFormProps {
